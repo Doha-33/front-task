@@ -122,7 +122,7 @@ export default function ReviewSection({
         ))}
         {/* Decorative Brand Icon from Mockup */}
         <div className="absolute bottom-[25px] left-0">
-          <img src="/brand.png" alt="" />
+          <img loading="lazy" src="/brand.png" alt="" />
         </div>
         <div className="flex justify-center pt-8">
           <button className="bg-[#F5F5F5] text-[#BE968E] px-12 py-4 rounded-2xl font-semibold text-[14px] transition-all">

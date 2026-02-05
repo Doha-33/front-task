@@ -53,6 +53,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             >
               <Image
                 src={img}
+                loading="lazy"
                 alt={`Thumb ${idx}`}
                 fill
                 className="object-cover"
@@ -68,7 +69,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       </div>
       {/* Decorative Brand Icon from Mockup */}
       <div className="absolute bottom-[-55px] left-0">
-        <img src="/brand.png" alt="" />
+        <img loading="lazy" src="/brand.png" alt="" />
       </div>
     </div>
   );

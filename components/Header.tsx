@@ -52,7 +52,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
-                <img src="/Group.png" alt="TinyTales Logo" />
+                <img loading="lazy" src="/Group.png" alt="TinyTales Logo" />
               </Link>
             </div>
 
@@ -60,7 +60,7 @@ export default function Header() {
             <nav className="hidden lg:flex space-x-10 items-center">
               {navLinks.map((link) => (
                 <div className="flex items-center gap-2">
-                  <img src={link.icon} alt="" />
+                  <img loading="lazy" src={link.icon} alt="" />
                   <Link
                     key={link.name}
                     href={link.href}
@@ -76,13 +76,13 @@ export default function Header() {
           {/* Utility Icons */}
           <div className="flex items-center gap-1 sm:gap-4">
             <button className="p-2 text-slate-400 hover:text-slate-900 transition-colors hidden sm:block">
-              <img src="/icons/bag.svg" alt="" />
+              <img loading="lazy" src="/icons/bag.svg" alt="" />
             </button>
             <button className="p-2 text-slate-400 hover:text-slate-900 transition-colors hidden sm:block relative">
-              <img src="/icons/notification.svg" alt="" />
+              <img loading="lazy" src="/icons/notification.svg" alt="" />
             </button>
             <button className="p-2 text-slate-400 hover:text-slate-900 transition-colors hidden sm:block">
-              <img src="/icons/fav.png" alt="" />
+              <img loading="lazy" src="/icons/fav.png" alt="" />
             </button>
 
             <button className="hidden lg:flex items-center gap-1 text-sm text-black hover:text-slate-900 transition-colors group px-2">
@@ -141,7 +141,7 @@ export default function Header() {
                 href="/login"
                 className="flex items-center gap-2 pl-2 group"
               >
-                <img src="/icons/man.svg" alt="" />
+                <img loading="lazy" src="/icons/man.svg" alt="" />
                 <ChevronDown
                   size={14}
                   className="group-hover:rotate-180 transition-transform"

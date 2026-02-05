@@ -71,13 +71,14 @@ export default function SimilarItems() {
             <div className="relative aspect-[4/4.5] rounded-[2.5rem] bg-white overflow-hidden shadow-sm transition-all duration-500 hover:shadow-2xl">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[2.5rem] overflow-hidden">
                 <Image
+                  loading="lazy"
                   src={item.img}
                   alt={item.name}
                   width={250}
                   height={350}
                   className="group-hover:scale-105 transition-transform duration-500"
                 />
-                </div>
+              </div>
 
               {/* Discount Badge */}
               {item.discount && (

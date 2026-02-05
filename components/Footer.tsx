@@ -34,7 +34,7 @@ export default function Footer() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
         <div className="lg:col-span-4 space-y-8">
-          <img src="/logo.png" alt="Logo" />
+          <img loading="lazy" src="/logo.png" alt="Logo" />
           <p className="text-[#FFFFFFB2] text-[14px] leading-relaxed max-w-sm font-medium">
             Ipsam in eos qui consequatur ab cum maxime.Soluta dolor quae Ipsam
             in eos qui consequatur ab .Soluta dolor quae Ipsam in eos
@@ -44,36 +44,36 @@ export default function Footer() {
 
         <div className="lg:col-span-4 grid grid-cols-2 gap-8">
           <div className=" space-y-8">
-          <h4 className="text-[24px] font-semibold">Let Us Help</h4>
-          <ul className="space-y-2 text-white opacity-70 text-[16px] font-medium">
-            {["My Account", "FAQs", "Categories", "All Products"].map((i) => (
-              <li key={i}>
-                <Link href="#" className="hover:text-white transition">
-                  {i}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <h4 className="text-[24px] font-semibold">Let Us Help</h4>
+            <ul className="space-y-2 text-white opacity-70 text-[16px] font-medium">
+              {["My Account", "FAQs", "Categories", "All Products"].map((i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition">
+                    {i}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div className=" space-y-8">
-          <h4 className="text-[24px] font-semibold">Policies</h4>
-          <ul className="space-y-2 text-[#FFFFFFB2] text-[16px] font-medium">
-            {[
-              "Refund Policy",
-              "About Us",
-              "Cancellation Policy",
-              "Terms and Conditions",
-              "Privacy Policy",
-            ].map((i) => (
-              <li key={i}>
-                <Link href="#" className="hover:text-white transition">
-                  {i}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+          <div className=" space-y-8">
+            <h4 className="text-[24px] font-semibold">Policies</h4>
+            <ul className="space-y-2 text-[#FFFFFFB2] text-[16px] font-medium">
+              {[
+                "Refund Policy",
+                "About Us",
+                "Cancellation Policy",
+                "Terms and Conditions",
+                "Privacy Policy",
+              ].map((i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition">
+                    {i}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="lg:col-span-4 space-y-8">
           <h4 className="text-[24px] font-semibold">Send Email</h4>
@@ -95,6 +95,7 @@ export default function Footer() {
               {icons.map((Icon, idx) => (
                 <Link key={idx} href="#">
                   <img
+                    loading="lazy"
                     src={Icon}
                     alt="social"
                     className="w-6 h-6 hover:opacity-80 transition"

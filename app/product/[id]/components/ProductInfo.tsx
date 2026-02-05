@@ -44,7 +44,7 @@ export default function ProductInfo({ product }: ProductInfoProps) {
         <div className="flex gap-3">
           <button className="w-12 h-12 rounded-2xl border border-[#BE968E] bg-white flex items-center justify-center transition-all shadow-sm">
             <div className="relative">
-              <img src="/icons/bag-add.png" alt="Share" />
+              <img loading="lazy" src="/icons/bag-add.png" alt="Share" />
             </div>
           </button>
           <button className="w-12 h-12 rounded-2xl border border-[#BE968E] bg-white flex items-center justify-center text-[#BE968E] transition-all shadow-sm">
