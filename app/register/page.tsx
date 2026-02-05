@@ -53,7 +53,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4 py-8">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4 py-8 mb-16">
       <Card className="w-full max-w-md shadow-xl border-none">
         <div className="p-8 space-y-6">
           <div className="text-center">
